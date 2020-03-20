@@ -9,7 +9,9 @@
 <link rel="stylesheet"  href="css/style.css">
 <body>
 	<!-- To the top -->
-	<button onclick="topFunction()" id="myBtn"><i style='font-size:18px' class="fa fa-arrow-up"></i></button>
+	<div class="w3-hide-medium w3-hide-small">
+		<button onclick="topFunction()" id="myBtn"><i style='font-size:18px' class="fa fa-arrow-up"></i></button>
+	</div>
 	<!-- Navigation bar on large screens -->
 	<div class="w3-top myNavbar">
 		<div class="w3-bar" id="myNavbar">
@@ -31,7 +33,7 @@
 		</div>
 	</div>
 	<!-- Navigation bar on medium and small screens -->
-	<div class="w3-top myNavbar w3-bar w3-card w3-mobile">
+	<div class="w3-top myNavbar w3-bar w3-card ">
 		<a href="index.html" class="active w3-bar-item w3-hide-large">HOME</a>
 		<a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-center-left" href="javascript:void(0);" onclick="toggleFunction()">
 		<i class="fa fa-bars"></i></a>
@@ -44,8 +46,8 @@
 		<a href="#genre" class="w3-bar-item w3-button">GENRE</a>
 	</div>
 		<img class="w3-image w3-hide-medium w3-hide-small" src="image/1.jpg"   width="100%" height="550"></img>
-		<img class="w3-image w3-hide-large" src="image/1_small.jpg"   width="100%" height="550"></img>
-		 <div class="w3-display-middle w3-mobile">
+		<img class=" w3-hide-large" src="image/1_small.jpg"   width="100%" height="550"></img>
+		 <div class="w3-display-middle">
 		 <div class="w3-padding-large  w3-animate-bottom">
 		<h1 class="w3-hide-large">"TODAY A READER, TOMORROW A LEADER"</h1>
 			<h4 class="w3-hide-large">MARGARET FULLER</h4>
@@ -56,7 +58,7 @@
 			</div>
 			</div>
 	<!-- Container with text -->	
-    <div class="w3-display-left padding_left " style="width:45%">
+    <div class="w3-display-left padding_left w3-hide-medium w3-hide-small" style="width:45%">
 		<div class="container_width  w3-padding-large  w3-animate-bottom">
 			<h1 class="container_text container_top w3-hide-medium w3-hide-small">"TODAY A READER, TOMORROW A LEADER"</h1>
 			<h4 class="w3-hide-medium w3-hide-small">MARGARET FULLER</h4>
@@ -72,7 +74,7 @@
 	<div class="w3-content w3-padding-64">
 		<h3 class="w3-center">READ BOOKS</h3>
 			<div class="w3-row w3-center margin">
-				<div class="w3-col m3">
+				<div class="w3-col s3 m3 l3">
 					<div class="container">
 						<img src="image/book1.png" class="image" style="width:100%" alt="C.Dickens Major Works">
 							<div class="middle ">
@@ -81,7 +83,7 @@
 						<p>C.Dickens Major Works</p>
 					</div>
 				</div>
-				<div class="w3-col m3">
+				<div class="w3-col s3 m3 l3">
 					<div class="container">
 						<img src="image/book2.png" class="image" style="width:100%" alt="C.Dickens Major Works">
 							<div class="middle ">
@@ -90,7 +92,7 @@
 						<p>C.Dickens Major Works</p>
 					</div>
 				</div>
-				<div class="w3-col m3">
+				<div class="w3-col s3 m3 l3">
 					<div class="container">
 						<img src="image/book3.png" class="image" style="width:100%" alt="Nancy Drew Starter Set">
 							<div class="middle ">
@@ -99,7 +101,7 @@
 						<p>Nancy Drew Starter Set</p>
 					</div>
 				</div>
-				<div class="w3-col m3">
+				<div class="w3-col s3 m3 l3">
 					<div class="container">
 						<img src="image/book4.png" class="image" style="width:100%" alt="Nancy Drew Starter Set">
 							<div class="middle ">
@@ -114,11 +116,14 @@
 	<div>
 		<section class="image_scrolling section margin w3-hide-medium w3-hide-small">
 	</div>
+	<div>
+		<section class="image_scrolling_small section margin w3-hide-large">
+	</div>
 	<!-- Container with image and quotes -->
 	<div class="margin">
 		<div class="container_quotes">
 			<div class="mySlides">
-				<img  class="w3-hide-medium w3-hide-small" src="image/image1.jpg" width="745" height="430"></img>
+				<img  class="w3-hide-medium w3-hide-small" src="image/image1.jpg" width="745" height="390"></img>
 				<img  class="w3-hide-large " src="image/image1.jpg" width="100%" height="430"></img>
 					<div class="w3-display-right w3-hide-medium w3-hide-small" style="width:51%" >
 						<div class="padding_quotes">
@@ -130,7 +135,7 @@
 				<div class="container_dot w3-display-bottomright">01<span class="size">/ 03</span></div>
 			</div>
 			<div class="mySlides">
-				<img class="w3-hide-medium w3-hide-small" src="image/image2.jpg"  width="745" height="430"></img>
+				<img class="w3-hide-medium w3-hide-small" src="image/image2.jpg"  width="745" height="390"></img>
 				<img  class="w3-hide-large " src="image/image2.jpg" width="100%" height="430"></img>
 					<div class="w3-display-right w3-hide-medium w3-hide-small" style="width:51%">
 						<div class="padding_quotes">
@@ -142,7 +147,7 @@
 				<div class="container_dot w3-display-bottomright">02<span class="size">/ 03</span></div>
 			</div>
 			<div class="mySlides">
-				<img class="w3-hide-medium w3-hide-small" src="image/image3.jpg"  width="745" height="430"></img>
+				<img class="w3-hide-medium w3-hide-small" src="image/image3.jpg"  width="745" height="390"></img>
 				<img  class="w3-hide-large " src="image/image3.jpg" width="100%" height="430"></img>
 					<div class="w3-display-right w3-hide-medium w3-hide-small" style="width:51%">
 						<div class="padding_quotes">
