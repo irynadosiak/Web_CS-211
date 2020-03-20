@@ -1,14 +1,22 @@
+.display_small {
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
 /*Body*/
 body, html {
-  height: 50%;
-  line-height: 1.8;
+  display: block;
   margin-top: 3.5%;
+  line-height: 1.5;
 }
 /*myNavbar*/
 .myNavbar{
 background-color: white;
 z-index: 3;
 }
+
 /*Registration and authorization form*/
 .input-container {
   display: -ms-flexbox; 
@@ -25,13 +33,15 @@ z-index: 3;
   border: 1.7px solid #9ACD32;
 }
 .form_registre{
-max-width:500px;
+max-width:550px;
 margin:auto;
+padding-top: 30px
 
 }
 .form_autorizate{
-max-width:500px;
+max-width:550px;
 margin:auto;
+padding-top: 80px
 
 }
 .margin_form{
@@ -40,7 +50,7 @@ margin-right: 10px;
 #myFooter{
 padding-top: 2px;
 background-color: #e6e6e6;
-position: absolute;
+position: fixed;
 bottom: 0;
 width: 100%;
 }
@@ -56,7 +66,7 @@ width: 100%;
   border: none;
   background-color: #9ACD32;
   color: white;
-  padding: 17px 22px 17px 22px;
+  padding: 19px 22px 19px 22px;
   border-radius: 100px;
 }
 #myBtn:hover {
@@ -99,7 +109,7 @@ color: white;
 font-family: Times, Times New Roman, serif;
 outline: none;
 border: none;
-width: 100%;
+width: 98%;
 padding: 6px;
 }
 .myBtn3:hover {
@@ -202,8 +212,8 @@ margin-top: 3%;
 background-color: #262626;
 font-family: Times, Times New Roman, serif;
 font-size: 20px;
-padding-top: 10px;
-padding-bottom: 10px;
+padding-top: 9.4px;
+padding-bottom: 9.4px;
 padding-right: 150px;
 padding-left: 100px;
 }
@@ -214,6 +224,10 @@ padding-left: 100px;
 .image_scrolling {
   background: url('../image/scrolling.jpg') no-repeat center fixed;
   background-size: 100%;
+}
+.image_scrolling_small {
+  background: url('../image/scrolling.jpg') no-repeat center fixed;
+  background-size: absolute;
 }
 .section {
   padding: 200px 0 67px 0;
