@@ -27,19 +27,27 @@ z-index: 3;
 .form_registre{
 max-width:500px;
 margin:auto;
-padding-bottom: 60px;
+
 }
 .form_autorizate{
 max-width:500px;
 margin:auto;
-padding-top: 60px;
-padding-bottom: 120px;
+
 }
 .margin_form{
 margin-right: 10px;
 }
+#myFooter{
+padding-top: 2px;
+background-color: #e6e6e6;
+position: absolute;
+bottom: 0;
+width: 100%;
+}
 /*Buttons*/
 #myBtn {
+  display: -ms-flexbox; 
+  display: flex;
   position: fixed;
   bottom: 45px;
   right: 55px;
@@ -48,7 +56,7 @@ margin-right: 10px;
   border: none;
   background-color: #9ACD32;
   color: white;
-  padding: 5px 22px 10px 22px;
+  padding: 17px 22px 17px 22px;
   border-radius: 100px;
 }
 #myBtn:hover {
@@ -149,9 +157,6 @@ padding-top: 135px;
 padding-bottom: 100px;
 }
 .container_width{
-	min-width: 420px;
-}
-.container_width_small{
 	min-width: 420px;
 }
 .container_text{
@@ -264,8 +269,10 @@ padding-top: 30px;
 }
 /*Footer*/
 #footer{
-padding: 2px;
+padding-top: 2px;
 background-color: #e6e6e6;
+position: flex;
+bottom: 0;
 width: 100%;
 }
 .border1{
