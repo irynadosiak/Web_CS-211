@@ -13,7 +13,7 @@ function myFunction() {
 var mybutton = document.getElementById("myBtn");
 mybutton.className = "w3-hide";
 function scrollFunction() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     mybutton.className = "w3-show";
   } else {
     mybutton.className = "w3-hide";
@@ -51,4 +51,21 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); 
+}
+// Used to show additional information
+function Information() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function Details() {
+  var x = document.getElementById("myDIV_small");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
