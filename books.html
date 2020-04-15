@@ -45,54 +45,50 @@
 		<div style="flex-grow: 1.3" class='w3-padding-24'>
 			<h3>Genre</h3>
 				<div class='line'></div>
-					<ul class="b">
-						<li>Adventure</li>
-						<li>Fantasy</li>
-						<li>Historical fiction</li>
-						<li>Horror</li>
-						<li>Mystery</li>
-						<li>Romance</li>
-						<li>Science fiction</li>
-						<li>Dystopia</li>
-						<li>Utopia</li>
-						<li>Detective</li>
-						<li>Thrillers</li>
-						<li>Biographies</li>
+					<ul class="b" id="Genre">
+						<li><a href="#">Adventure</a></li>
+						<li><a href="#">Fantasy</a></li>
+						<li><a href="#">Historical fiction</a></li>
+						<li><a href="#">Horror</a></li>
+						<li><a href="#">Mystery</a></li>
+						<li><a href="#">Romance</a></li>
+						<li><a href="#">Science fiction</a></li>
+						<li><a href="#">Dystopia</a></li>
+						<li><a href="#">Utopia</a></li>
+						<li><a href="#">Detective</a></li>
+						<li><a href="#">Thrillers</a></li>
+						<li><a href="#">Biographies</a></li>
 					</ul>
 						<div class="search-container">
-							<form action="">
 								<div class="input">
-									<input class="input-search" type="text" placeholder="Search.."></input>
-										<button type="submit"><a class='color_search'>
+									<input type="text" id="myInput_genre" onkeyup="Search_genre()" class="input-search" placeholder="Search.." title="Type in a name">
+										<form><a class='color_search'>
 												<i class="fa fa-search"></a></i>
-										</button>
+										</form>
 									</input>
 								</div>
-							</form>
 						</div>
 			<h3 class='padding_author'>Author</h3>
 				<div class='line'></div>
-					<ul class="b">
-						<li>William Shakespeare</li>
-						<li>Agatha Christie</li>
-						<li>Leo Tolstoy</li>
-						<li>Stephen King</li>
-						<li>Tolkien</li>
-						<li>Jackie Collins</li>
-						<li>Dante Alighieri</li>
-						<li>Aldous Huxley</li>
-						<li>George Orwell</li>
+					<ul class="b" id="Author">
+						<li><a href="#">William Shakespeare</a></li>
+						<li><a href="#">Agatha Christie</a></li>
+						<li><a href="#">Leo Tolstoy</a></li>
+						<li><a href="#">Stephen King</a></li>
+						<li><a href="#">Tolkien</a></li>
+						<li><a href="#">Jackie Collins</a></li>
+						<li><a href="#">Dante Alighieri</a></li>
+						<li><a href="#">Aldous Huxley</a></li>
+						<li><a href="#">George Orwell</a></li>
 					</ul>
 						<div class="search-container">
-							<form action="">
 								<div class="input">
-									<input class="input-search" type="text" placeholder="Search.."></input>
-										<button type="submit"><a class='color_search'>	
+									<input type="text" id="myInput_author" onkeyup="Search_author()" class="input-search" placeholder="Search..">
+										<form><a class='color_search'>	
 											<i class="fa fa-search"></a></i>
-										</button>
+										</form>
 									</input>
 								</div>
-							</form>
 						</div>
 		</div>
 			<div style="flex-grow: 8">
@@ -187,47 +183,41 @@
 	<!-- Book page on small screen -->
 	<div class='w3-hide-large'>
 		<div class='w3-padding-24 small'>
-			<h3 class='w3-center'>Genre</h3>
+			<h3>Genre</h3>
 				<div class='line'></div>
-					<ul class="b">
-					<li>Adventure</li>
-					<li>Fantasy</li>
-					<li>Fiction</li>
-				</ul>
-			<div class="search-container">
-				<form action="">
-					<div class="input">
-						<input class="input-search" type="text" placeholder="Search.."></input>
-							<button type="submit"><a class='color_search'>	
-							    <i class="fa fa-search"></a></i>
-				  		    </button>
-				 	    </input>
-				 	</div>
-				 </form>
-			 </div>
-		 </div>
-		 <div class='small'>
-			 <h3 class='w3-center'>Author</h3>
-			 <div class='line'></div>
-				 <ul class="b">
-					 <li>William Shakespeare</li>
-					 <li>Agatha Christie</li>
-				     <li>Leo Tolstoy</li>					
-			     </ul>
-			 <div class="search-container">
-			 <form action="">
-                  <div class="input">
-			          <input class="input-search" type="text" placeholder="Search.."></input>
-					      <button type="submit"><a class='color_search'>
-					          <i class="fa fa-search"></a></i>
-					      </button>
-				      </input>
-			      </div>
-			  </form>
-          </div>
+					<ul class="b_small" id="Genre_small">
+						<li><a href="#">Adventure</a></li>
+						<li><a href="#">Fantasy</a></li>
+						<li><a href="#">Historical fiction</a></li>
+					</ul>
+					<div class="search-container">
+								<div class="input">
+									<input type="text" id="myInput_genre_small" onkeyup="Search_genre_small()" class="input-search" placeholder="Search..">
+										<form><a class='color_search'>	
+											<i class="fa fa-search"></a></i>
+										</form>
+									</input>
+								</div>
+						</div>
+			<h3 class='small_padding'>Author</h3>
+				<div class='line'></div>
+					<ul class="b_small" id="Author_small">
+						<li><a href="#">William Shakespeare</a></li>
+						<li><a href="#">Agatha Christie</a></li>
+						<li><a href="#">Leo Tolstoy</a></li>
+					</ul>
+					<div class="search-container">
+								<div class="input">
+									<input type="text" id="myInput_author_small" onkeyup="Search_author_small()" class="input-search" placeholder="Search..">
+										<form><a class='color_search'>	
+											<i class="fa fa-search"></a></i>
+										</form>
+									</input>
+								</div>
+					</div>
       </div>
 		<div class="w3-content ">
-			<h3 class="w3-center">Choose a book to read:</h3>
+			<h3 class="w3-center small_padding">Choose a book to read:</h3>
 			<div class="w3-row w3-center margin">
 				<div class="w3-col s4 m4 small_book">
 					<div class="container">
