@@ -47,15 +47,20 @@ z-index: 4;
   display: -ms-flexbox; 
   display: flex;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 .input-field {
   width: 100%;
   padding: 10px;
   outline: none;
+  border: 0.5px solid #CDCDCD;
+  color: #4B4B4B;
+  font-family: Times, Times New Roman, serif;
+  letter-spacing: .025em;
+  font-size: 16px;
 }
 .input-field:focus {
-  border: 1.7px solid #76bd42;
+  border: 0.5px solid #76bd42;
 }
 .form_registre{
 max-width:350px;
@@ -105,7 +110,7 @@ font-size: 16px;
 padding: 20px 30px;
 }
 .myBtn:hover{
-	border: 0.8px solid #76bd42;
+	border: 0.5px solid #76bd42;
 	color: #76bd42;
 }
 .myBtn1{
@@ -467,6 +472,18 @@ ul.b {
   	font-weight: 0;
 	font-family: Times, Times New Roman, serif;
 	letter-spacing: .025em;
+	min-height:350px;
+}
+ul.b_small {
+    list-style-type: square ;
+    font-size:16px;
+    margin: 0;
+    padding-left: 20px;
+    color: #7A7A7A;
+  	font-weight: 0;
+	font-family: Times, Times New Roman, serif;
+	letter-spacing: .025em;
+	min-height:75px;
 }
 .books{
 	margin:20px;
@@ -487,20 +504,22 @@ ul.b {
 
 .search-container {
   float: left;
+  margin: 0;
+  padding: 0;
   
 }
 .search-container:hover{
   border: none;
   outline: none;
 }
-.search-container button {
+.search-container form {
   float: right;
   padding: 16px;
   background: #F3F3F3;
   font-size: 16px;
   border: none;
 }
-.search-container button:hover {
+.search-container form:hover {
   border: none;
   outline: none;
 }
@@ -522,11 +541,13 @@ ul.b {
   padding: 12px;
   padding-left: 24px;
   outline: none;
+  color: #4B4B4B;
 }
 .input-search:focus {
    border: none;
   outline: none;
 }
+
 .color_search{
 	color: #909090;
 }
@@ -538,7 +559,7 @@ ul.b {
 	margin-top: 150px;
 }
 .small_padding{
-	padding-top: 130px;
+	padding-top: 100px;
 }
 .padding_publishing_house{
 	margin-top: 150px;
@@ -562,6 +583,8 @@ ul.b {
   width: 100%;
   display:none;
   margin: 12px;
+  padding-left:50px;
+  padding-right:50px;
 }
 .information_padding{
 	margin-left: 270px;
@@ -572,12 +595,13 @@ ul.b {
 }
 .input-field_comment {
   width: 80%;
-  padding: 10px;
+  padding: 12px;
   outline: none;
   margin-bottom: 12px;
   font-family: Times, Times New Roman, serif;
   letter-spacing: .025em;
   font-size: 16px; 
+  border: 0.5px solid #CDCDCD;
   color: #4B4B4B;
 }
 .input-field_comment:focus {
