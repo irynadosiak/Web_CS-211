@@ -67,7 +67,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 							<Button onClick={() => history.push('{book.file}')} className="myBtn1">READ</Button>
 							if (this.props.logged_in) {
 								<Button onClick={() => history.push('/mylibrary/${book.pk}')} className="myBtn">ADD TO LIBRARY</Button>
-						    else {
+						        else {
 								<Button onClick={() => history.push('/login')} className="myBtn">ADD TO LIBRARY</Button>
 							 }
                             <RenderComments 
