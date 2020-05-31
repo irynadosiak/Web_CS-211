@@ -12,8 +12,8 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
                         <CardBody>
                             <CardTitle><h1>{book.name}</h1></CardTitle>
                             <CardText>{book.description_of_book}</CardText>
-							<div className='line'></div>
-							<CardText><h4>Author: </h4>{book.author}</CardText>
+			    <div className='line'></div>
+			    <CardText><h4>Author: </h4>{book.author}</CardText>
                             <CardText><h4>Genre: </h4>{book.genre}</CardText>
                             <CardText><h4>Publishing house: </h4>{book.publishing_house}</CardText>							
                         </CardBody>
