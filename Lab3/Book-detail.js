@@ -63,18 +63,6 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
             return(
                 <div className="container">
                     <div className="row">
-                        <Breadcrumb>
-                            <BreadcrumbItem>
-                                <Link to="/books">Menu</Link>
-                            </BreadcrumbItem>
-                            <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
-                        </Breadcrumb>
-                        <div className="col-12">
-                            <h3>{props.dish.name}</h3>
-                            <hr />
-                        </div>
-                    </div>
-                    <div className="row">
                             <RenderBook book={props.book} />
                             <RenderComments 
                                 comments={props.comments}
