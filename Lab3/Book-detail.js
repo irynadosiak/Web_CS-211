@@ -59,11 +59,17 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 
     const BookDetail = (props) => {
         
-        if (props.dish != null) {
+        if (props.book != null) {
             return(
                 <div className="container">
                     <div className="row">
                             <RenderBook book={props.book} />
+							<Button onClick={() => history.push('{book.file}')} className="myBtn1">READ</Button>
+							if (this.props.logged_in) {
+								<Button onClick={() => history.push('/mylibrary/${book.pk}')} className="myBtn">ADD TO LIBRARY</Button>
+						    else {
+								<Button onClick={() => history.push('/login/${book.pk}')} className="myBtn">ADD TO LIBRARY</Button>
+							 }
                             <RenderComments 
                                 comments={props.comments}
                                 addComment={props.addComment}
@@ -115,7 +121,7 @@ class CommentForm extends Component {
     render() {
         return(
             <div>
-                <Button outline onClick={this.toggleModal}><span className="fa fa-edit fa-lg"></span>ADD A REVIEW</Button>
+                <Button outline onClick={this.toggleModal}>ADD A REVIEW</Button>
 
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                     <ModalHeader toggle={this.toggleModal}>ADD A REVIEW</ModalHeader>
