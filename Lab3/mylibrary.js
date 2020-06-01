@@ -3,7 +3,7 @@ import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle} from 'reactstrap';
 
 function RenderCard({item}) {
-		if (this.props != Null) {
+	if (this.props != Null) {
             <Card>
                 <CardImg src={item.image} alt={item.name} />
                 <CardBody>
@@ -11,15 +11,14 @@ function RenderCard({item}) {
 					<Button onClick={() => history.push('/book-detail/${book.pk}')} className="myBtn1">View</Button>
 				</div>				
 				<span><p className='right '>
-                <CardTitle>{item.name}</CardTitle>
-				{{ item.upload_date }}  </p></span>
+               			<CardTitle>{item.name}</CardTitle>
+			        {{ item.upload_date }}  </p></span>
                 </CardBody>
             </Card>}
-		else{
-		    <h4>Please select <a className="link"  to='/books'> books </a> to add to your library</h4>
-		
-			
-       );
+	);
+	else{
+		<h4>Please select <a className="link"  to='/books'> books </a> to add to your library</h4>
+	}		
 
 }
 
