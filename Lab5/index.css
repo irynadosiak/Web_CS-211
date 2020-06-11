@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+html {
+    height: 100%;
+}
+body{
+    margin: 0;
+    min-height: 100%;
+}
+body, #root{
+    height: 100%;
+}
+ul{
+    padding: 0;
+}
+.AppContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.centered{
+    text-align: center;
+}
+.clickable{
+    cursor: pointer;
+}
+.mainfont{
+    font-family: 'Lato', sans-serif;
+}
+.secondaryfont{
+    font-family: 'Raleway', sans-serif;
+}
+.input-group{
+    margin-bottom: 1em;
+}
+input::placeholder{
+    color:#A8A8A8;
+    font-style: italic;
+  }
+input{
+    color: black !important;
+}
+.fillUpFlex{
+    flex: 1 1 auto;
+}
+/* Home page css */
+.homePage{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('./imgs/Homepagebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.homePageContent{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: auto auto;
+    width: 60%;
+    padding: 1em;
+    background-color: rgb(227, 220, 220);
+    border-radius: 5px;
+    font-size: 1.3em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.60)
+}
+.homePageContent h1{
+    margin-bottom: 0.5em;
+}
+.homePageContent ul{
+    list-style: none;
+}
+.homepageButtons a > button {
+    width: 40%;
+}
+.homepageButtons{
+    text-align: center;
+    margin: 2em auto;
+}
+.homepageButtons a{
+    margin: auto 0.2em;
+}
+
+/* Navigation bar*/
+.NavigationBar{
+    flex: 0 0 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(200, 195, 195, 0.91)
+}
+.NavigationBar li{
+    list-style: none;
+}
+.NavigationBar li:last-child > *{
+    margin: 0 1em;
+}
+.pushright{
+    margin-left:auto;
+}
+.rightitemnav{
+    color: #479CF6
+}
+
+/* Login page and registerpage*/
+.LoginPage, .registerPage{
+    background-image: url("./imgs/Library.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.input-group{
+    margin: 1em auto;
+    width: 80%;
+}
+.LoginFormContainer, .registerFormContainer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginForm, .registerForm{
+    padding: 1em;
+    border-radius: 5px;
+    width: 35%;
+    background-color:rgb(242, 242, 242);
+}
+.LoginForm h1, .registerForm h1{
+    margin: 0.5em auto 1em auto;
+}
+.LoginForm input, .registerForm input {
+    margin-bottom: 1em;
+}
+.loginButtons, .registerButtons{
+    margin: 1em 0 0.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loginButtons button, a{
+    margin: 0 0.5em;
+    width: 35%;
+}
+.loginButtons a > button {
+    width: 100%;
+}
+.registerButtons button, a{
+    margin: 0 0.5em;
+    width: 35%;
+}
+.registerButtons a > button {
+    width: 100%;
+}
+.formPrepend{
+    min-width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+.formPrepend i{
+    width: 100%;
+    text-align: center;
+}
+
+/* Book overview page*/
+.bookOverviewContainer{
+    width: 80%;
+    margin: 0 auto;
+}
+.headerButtons{
+    display: flex;
+    justify-content: center;
+}
+.headerButtons > * {
+    width: 15%;
+    margin: 0 0.5em;
+}
+.bookpage{
+    min-height: 101%;
+}
+
+/*Profile page. */
+.profilePage{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(https://images.pexels.com/photos/735795/victoria-station-busy-people-victoria-735795.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.profilePageContent{
+    height: 80%;
+    display: flex;
+    width: 70%;
+    margin: 1em 10%;
+    background-color: rgba(220, 220, 220, 0.80);
+    box-shadow: 1px 2px 4px 0 rgba(49,49,47,.3);
+}
+.profilePageNav{
+    flex: 0 0 30%;
+    padding: 0;
+}
+.clickablelist{
+    background-color: #fff;
+    display: flex;
+    margin: 0;
+    border: 2px solid #dddbd5;
+    box-shadow: 1px 2px 4px 0 rgba(49,49,47,.3);
+}
+.flex-col{
+    flex-direction: column;
+}
+.clickablelistitem{
+    position: relative;
+    flex: 1 1 auto;
+    list-style: none;
+    background-color: #fff;
+    padding: 0.5em 0em 0.5em 1em;
+    border-bottom: 1px solid #dddbd5;
+    cursor: pointer;
+}
+.clickablelistitem:hover{
+    background-color: #f6f3ed;
+}
+.clickablelistitem i{
+    margin-left: 1em;
+    height: 1em;
+    line-height: 1em;
+}
+.clickablelistitem:hover i{
+    animation: 1s infinite moverightandback alternate;
+}
+@keyframes moverightandback {
+    from {
+        margin-left: 1em;
+    }
+    to{
+        margin-left: 1.5em;
+    }
+  }
+.avatar{
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    width: 6em;
+}
+.profileHeader{
+    margin: 1em 0;
+}
+.bigcontainer {
+    width: 80%;
+}
+.halfcontainer{
+    width: 50%;
+}
+.blockcenter{
+    display: block;
+    margin: 0 auto;
+}
+.hidden{
+    visibility: hidden;
+}
+.openedclickablelistitem{
+    background-color: #F6EBD7;
+}
+.openedclickablelistitem i{
+    position: absolute;
+    right: 1em;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+.profilepagecontents{
+    overflow-y: scroll;
+}
+.accordioncontent{
+    width: 100%;
+    border-bottom: 1px solid #dddbd5;
+    padding: 1em;
+}
