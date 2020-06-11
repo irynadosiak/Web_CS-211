@@ -2,7 +2,7 @@ import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueRouter from "vue-router";
 import Register from "../../src/components/signup";
 let wrapper;
-describe('signup test', () => {
+describe('My Test Suite', () => {
     beforeEach(() => {
         const localVue = createLocalVue()
         localVue.use(VueRouter)
@@ -13,7 +13,7 @@ describe('signup test', () => {
             stubs: ['router-link']
         })
     })
-    it('Check for submit call', () => {
+    it('My Test Case', () => {
         const submit = jest.fn()
         wrapper.setMethods({submit: submit})
         wrapper.find('.register').trigger('click')
