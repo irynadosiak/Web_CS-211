@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import VueRouter from "vue-router";
 import login from "../../src/components/login";
 let wrapper;
-describe('login test', () => {
+describe('My Test Suite', () => {
     let actions
     let store
     beforeEach(() => {
@@ -24,14 +24,9 @@ describe('login test', () => {
             stubs: ['router-link']
         })
     })
-    it('Check for empty field error message', () => {
+    it('My Test Case', () => {
         wrapper.find('.login').trigger('click')
         expect(wrapper.vm.$data.error_message).toBe('Fill all fields!')
-    })
-    it('Check for login call', () => {
-        wrapper.setData({username: 'test', password: 'test'})
-        wrapper.find('.login').trigger('click')
-        expect(actions.obtainToken).toHaveBeenCalled()
     })
 })
 
