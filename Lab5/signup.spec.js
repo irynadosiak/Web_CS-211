@@ -1,22 +1,18 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import VueRouter from "vue-router";
-import Register from "../../src/components/Signuo";
-
+import Register from "../../src/components/signup";
 let wrapper;
-describe('Signup test', () => {
+describe('signup test', () => {
     beforeEach(() => {
         const localVue = createLocalVue()
         localVue.use(VueRouter)
         const router = new VueRouter()
-
-        wrapper = shallowMount(Signup, {
+        wrapper = shallowMount(signup, {
             localVue,
             router,
             stubs: ['router-link']
         })
     })
-
-
     it('Check for submit call', () => {
         const submit = jest.fn()
         wrapper.setMethods({submit: submit})
